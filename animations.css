@@ -1,0 +1,997 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+.st4, .st1, .st2, .st3, .st4, .st5, .st6, .st7 {
+  /*fill: none;*/
+}
+
+
+
+/********************************************************************************/
+                      /* FACE, NECK & SHOULDER OUTLINES */
+/********************************************************************************/
+
+#houtline .st6 {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 0;
+  -webkit-animation: headOutline 5s linear forwards;
+  -o-animation: headOutline 5s linear forwards;
+  -moz-animation: headOutline 5s linear forwards;
+  animation: headOutline 5s linear forwards;
+}
+
+/*@-webkit-keyframes headOutline {
+  from {
+    stroke-dashoffset: 2000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}*/
+
+@-webkit-keyframes headOutline {
+  0% {
+    stroke-dashoffset: 2000;
+  }
+  20% {
+    stroke-dashoffset: 0;
+  }
+  80% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 2000;
+  }
+}
+
+#neck .st6 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: neck 5s linear forwards;
+  -o-animation: neck 5s linear forwards;
+  -moz-animation: neck 5s linear forwards;
+  animation: neck 5s linear forwards;
+  -webkit-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/*@-webkit-keyframes neck {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  to {
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+}*/
+
+@-webkit-keyframes neck {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  20% {
+    opacity: 100;
+    stroke-dashoffset: 1100;
+  }
+  40% {
+    stroke-dashoffset: 100
+  }
+  60% {
+    stroke-dashoffset: 600
+  }
+  80% {
+    /*opacity: 100;*/
+    stroke-dashoffset: 1700;
+  }
+  100% {
+    /*opacity: 0;*/
+    stroke-dashoffset: 2200;
+  }
+}
+
+#shoulderL .st6 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: shoulderL 4s linear forwards;
+  -o-animation: shoulderL 4s linear forwards;
+  -moz-animation: shoulderL 4s linear forwards;
+  animation: shoulderL 4s linear forwards;
+  -webkit-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+/*@-webkit-keyframes shoulderL {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  to {
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+}*/
+
+@-webkit-keyframes shoulderL {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  20% {
+    opacity: 100;
+    stroke-dashoffset: 1100;
+  }
+  40% {
+    stroke-dashoffset: 0
+  }
+  60% {
+    stroke-dashoffset: 600
+  }
+  80% {
+    /*opacity: 100;*/
+    stroke-dashoffset: 1700;
+  }
+  100% {
+    /*opacity: 0;*/
+    stroke-dashoffset: 2200;
+  }
+}
+
+#shoulderR .st6 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: shoulderR 4s linear forwards;
+  -o-animation: shoulderR 4s linear forwards;
+  -moz-animation: shoulderR 4s linear forwards;
+  animation: shoulderR 4s linear forwards;
+  -webkit-animation-delay: 2.4s;
+  -o-animation-delay: 2.4s;
+  -moz-animation-delay: 2.4s;
+  animation-delay: 2.4s;
+}
+
+/*@-webkit-keyframes shoulderR {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  to {
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+}
+*/
+
+@-webkit-keyframes shoulderR {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  20% {
+    opacity: 100;
+    stroke-dashoffset: 1100;
+  }
+  40% {
+    stroke-dashoffset: 100
+  }
+  60% {
+    stroke-dashoffset: 600
+  }
+  80% {
+    /*opacity: 100;*/
+    stroke-dashoffset: 1700;
+  }
+  100% {
+    /*opacity: 0;*/
+    stroke-dashoffset: 2200;
+  }
+}
+
+/********************************************************************************/
+                                /* FACE GRID */
+/********************************************************************************/
+
+#grid-vert .st6 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: grid-vert 3s linear forwards;
+  -o-animation: grid-vert 3s linear forwards;
+  -moz-animation: grid-vert 3s linear forwards;
+  animation: grid-vert 3s linear forwards;
+  -webkit-animation-delay: 2.7s;
+  -o-animation-delay: 2.7s;
+  -moz-animation-delay: 2.7s;
+  animation-delay: 2.7s;
+}
+
+/*@-webkit-keyframes grid-vert {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  to {
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+}*/
+
+@-webkit-keyframes grid-vert {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  20% {
+    opacity: 100;
+    stroke-dashoffset: 1100;
+  }
+  40% {
+    stroke-dashoffset: 100
+  }
+  60% {
+    stroke-dashoffset: 600
+  }
+  80% {
+    /*opacity: 100;*/
+    stroke-dashoffset: 1700;
+  }
+  100% {
+    /*opacity: 0;*/
+    stroke-dashoffset: 2200;
+  }
+}
+
+#grid-horiz-eye-top .st6 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: grid-eye-top 3s linear forwards;
+  -o-animation: grid-eye-top 3s linear forwards;
+  -moz-animation: grid-eye-top 3s linear forwards;
+  animation: grid-eye-top 3s linear forwards;
+  -webkit-animation-delay: 2.8s;
+  -o-animation-delay: 2.8s;
+  -moz-animation-delay: 2.8s;
+  animation-delay: 2.8s;
+}
+
+/*@-webkit-keyframes grid-eye-top {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  to {
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+}*/
+
+@-webkit-keyframes grid-eye-top {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  20% {
+    opacity: 100;
+    stroke-dashoffset: 1100;
+  }
+  40% {
+    stroke-dashoffset: 100
+  }
+  60% {
+    stroke-dashoffset: 600
+  }
+  80% {
+    /*opacity: 100;*/
+    stroke-dashoffset: 1700;
+  }
+  100% {
+    /*opacity: 0;*/
+    stroke-dashoffset: 2200;
+  }
+}
+
+#grid-horiz-eye-bot .st6 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: grid-eye-bot 3s linear forwards;
+  -o-animation: grid-eye-bot 3s linear forwards;
+  -moz-animation: grid-eye-bot 3s linear forwards;
+  animation: grid-eye-bot 3s linear forwards;
+  -webkit-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+/*@-webkit-keyframes grid-eye-bot {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  to {
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+}*/
+
+@-webkit-keyframes grid-eye-bot {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  20% {
+    opacity: 100;
+    stroke-dashoffset: 1100;
+  }
+  40% {
+    stroke-dashoffset: 100
+  }
+  60% {
+    stroke-dashoffset: 600
+  }
+  80% {
+    /*opacity: 100;*/
+    stroke-dashoffset: 1700;
+  }
+  100% {
+    /*opacity: 0;*/
+    stroke-dashoffset: 2200;
+  }
+}
+
+#grid-nose-hr .st6 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: grid-nose 3s linear forwards;
+  -o-animation: grid-nose 3s linear forwards;
+  -moz-animation: grid-nose 3s linear forwards;
+  animation: grid-nose 3s linear forwards;
+  -webkit-animation-delay: 3.2s;
+  -o-animation-delay: 3.2s;
+  -moz-animation-delay: 3.2s;
+  animation-delay: 3.2s;
+}
+
+/*@-webkit-keyframes grid-nose {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  to {
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+}
+*/
+
+@-webkit-keyframes grid-nose {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  20% {
+    opacity: 100;
+    stroke-dashoffset: 1100;
+  }
+  40% {
+    stroke-dashoffset: 100
+  }
+  60% {
+    stroke-dashoffset: 600
+  }
+  80% {
+    /*opacity: 100;*/
+    stroke-dashoffset: 1700;
+  }
+  100% {
+    /*opacity: 0;*/
+    stroke-dashoffset: 2200;
+  }
+}
+
+#grid-mouth-hr .st6 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: grid-mouth 3s linear forwards;
+  -o-animation: grid-mouth 3s linear forwards;
+  -moz-animation: grid-mouth 3s linear forwards;
+  animation: grid-mouth 3s linear forwards;
+  -webkit-animation-delay: 3.4s;
+  -o-animation-delay: 3.4s;
+  -moz-animation-delay: 3.4s;
+  animation-delay: 3.4s;
+}
+
+/*@-webkit-keyframes grid-mouth {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  to {
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+}*/
+
+@-webkit-keyframes grid-mouth {
+  0% {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  20% {
+    opacity: 100;
+    stroke-dashoffset: 1100;
+  }
+  40% {
+    stroke-dashoffset: 100
+  }
+  60% {
+    stroke-dashoffset: 600
+  }
+  80% {
+    /*opacity: 100;*/
+    stroke-dashoffset: 1700;
+  }
+  100% {
+    /*opacity: 0;*/
+    stroke-dashoffset: 2200;
+  }
+}
+
+/********************************************************************************/
+                       /* INITIAL LINEWORK -- FACIAL FEATURES */
+/********************************************************************************/
+
+#linework-left-eye .st4 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: LWLeftEye 3s linear forwards;
+  -o-animation: LWLeftEye 3s linear forwards;
+  -moz-animation: LWLeftEye 3s linear forwards;
+  animation: LWLeftEye 3s linear forwards;
+  -webkit-animation-delay: 3.4s;
+  -o-animation-delay: 3.4s;
+  -moz-animation-delay: 3.4s;
+  animation-delay: 3.4s;
+}
+
+@-webkit-keyframes LWLeftEye {
+  0% {
+    fill: rgba(0,0,0,0);
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  60% {
+    opacity: 100;
+    fill: rgba(0,0,0,0.2);
+    stroke-dashoffset: 0;
+  }
+  85% {
+    fill: rgba(0,0,0,0.6);
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    fill: rgba(0,0,0,1);
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+
+}
+
+#linework-right-eye .st4 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: LWRightEye 3s linear forwards;
+  -o-animation: LWRightEye 3s linear forwards;
+  -moz-animation: LWRightEye 3s linear forwards;
+  animation: LWRightEye 3s linear forwards;
+  -webkit-animation-delay: 3.4s;
+  -o-animation-delay: 3.4s;
+  -moz-animation-delay: 3.4s;
+  animation-delay: 3.4s;
+}
+
+@-webkit-keyframes LWRightEye {
+  0% {
+    fill: rgba(0,0,0,0);
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  60% {
+    opacity: 100;
+    fill: rgba(0,0,0,0.2);
+    stroke-dashoffset: 0;
+  }
+  85% {
+    fill: rgba(0,0,0,0.6);
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    fill: rgba(0,0,0,1);
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+
+}
+
+#linework-nose .st4 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: LWnose 3s linear forwards;
+  -o-animation: LWnose 3s linear forwards;
+  -moz-animation: LWnose 3s linear forwards;
+  animation: LWnose 3s linear forwards;
+  -webkit-animation-delay: 3.4s;
+  -o-animation-delay: 3.4s;
+  -moz-animation-delay: 3.4s;
+  animation-delay: 3.4s;
+}
+
+@-webkit-keyframes LWnose {
+  0% {
+    fill: rgba(0,0,0,0);
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  60% {
+    opacity: 100;
+    fill: rgba(0,0,0,0.2);
+    stroke-dashoffset: 0;
+  }
+  85% {
+    fill: rgba(0,0,0,0.6);
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    fill: rgba(0,0,0,1);
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+}
+
+#linework-mouth .st4 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: LWmouth 3s linear forwards;
+  -o-animation: LWmouth 3s linear forwards;
+  -moz-animation: LWmouth 3s linear forwards;
+  animation: LWmouth 3s linear forwards;
+  -webkit-animation-delay: 3.4s;
+  -o-animation-delay: 3.4s;
+  -moz-animation-delay: 3.4s;
+  animation-delay: 3.4s;
+}
+
+@-webkit-keyframes LWmouth {
+  0% {
+    fill: rgba(0,0,0,0);
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  60% {
+    opacity: 100;
+    fill: rgba(0,0,0,0.2);
+    stroke-dashoffset: 0;
+  }
+  85% {
+    fill: rgba(0,0,0,0.6);
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    fill: rgba(0,0,0,1);
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+
+}
+
+#linework-pupils .st0 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: LWPupils 3s linear forwards;
+  -o-animation: LWPupils 3s linear forwards;
+  -moz-animation: LWPupils 3s linear forwards;
+  animation: LWPupils 3s linear forwards;
+  -webkit-animation-delay: 3.4s;
+  -o-animation-delay: 3.4s;
+  -moz-animation-delay: 3.4s;
+  animation-delay: 3.4s;
+}
+
+@-webkit-keyframes LWPupils {
+  0% {
+    fill: rgba(255,255,255,0);
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  60% {
+    opacity: 100;
+    fill: rgba(255,255,255,0.2);
+    stroke-dashoffset: 0;
+  }
+  85% {
+    fill: rgba(255,255,255,0.6);
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    fill: rgba(255,255,255,1);
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+
+}
+
+
+#linework-eyebrow-right .st4 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: LWRightBrow 3s linear forwards;
+  -o-animation: LWRightBrow 3s linear forwards;
+  -moz-animation: LWRightBrow 3s linear forwards;
+  animation: LWRightBrow 3s linear forwards;
+  -webkit-animation-delay: 3.4s;
+  -o-animation-delay: 3.4s;
+  -moz-animation-delay: 3.4s;
+  animation-delay: 3.4s;
+}
+
+@-webkit-keyframes LWRightBrow {
+  0% {
+    fill: rgba(0,0,0,0);
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  60% {
+    opacity: 100;
+    fill: rgba(0,0,0,0.2);
+    stroke-dashoffset: 0;
+  }
+  85% {
+    fill: rgba(0,0,0,0.6);
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    fill: rgba(0,0,0,1);
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+
+}
+
+#linework-eyebrow-left .st4 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: LWLeftBrow 3s linear forwards;
+  -o-animation: LWLeftBrow 3s linear forwards;
+  -moz-animation: LWLeftBrow 3s linear forwards;
+  animation: LWLeftBrow 3s linear forwards;
+  -webkit-animation-delay: 3.4s;
+  -o-animation-delay: 3.4s;
+  -moz-animation-delay: 3.4s;
+  animation-delay: 3.4s;
+}
+
+@-webkit-keyframes LWLeftBrow {
+  0% {
+    fill: rgba(0,0,0,0);
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  60% {
+    opacity: 100;
+    fill: rgba(0,0,0,0.2);
+    stroke-dashoffset: 0;
+  }
+  85% {
+    fill: rgba(0,0,0,0.6);
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    fill: rgba(0,0,0,1);
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+
+}
+
+/********************************************************************************/
+                       /* INITIAL LINEWORK -- HAIR */
+/********************************************************************************/
+
+
+#linework-hair-leftbang .st2 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: LWHairLeftBang 3s linear forwards;
+  -o-animation: LWHairLeftBang 3s linear forwards;
+  -moz-animation: LWHairLeftBang 3s linear forwards;
+  animation: LWHairLeftBang 3s linear forwards;
+  -webkit-animation-delay: 3.4s;
+  -o-animation-delay: 3.4s;
+  -moz-animation-delay: 3.4s;
+  animation-delay: 3.4s;
+}
+
+@-webkit-keyframes LWHairLeftBang {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  to {
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+}
+
+#linework-hair-rightbang .st2 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: LWHairRightBang 3s linear forwards;
+  -o-animation: LWHairRightBang 3s linear forwards;
+  -moz-animation: LWHairRightBang 3s linear forwards;
+  animation: LWHairRightBang 3s linear forwards;
+  -webkit-animation-delay: 3.4s;
+  -o-animation-delay: 3.4s;
+  -moz-animation-delay: 3.4s;
+  animation-delay: 3.4s;
+}
+
+@-webkit-keyframes LWHairRightBang {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  to {
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+}
+
+#linework-hair-left .st2 {
+  opacity: 0;
+  stroke-dasharray: 2900;
+  stroke-dashoffset: 0;
+  -webkit-animation: LWHairTopLeft 3s linear forwards;
+  -o-animation: LWHairTopLeft 3s linear forwards;
+  -moz-animation: LWHairTopLeft 3s linear forwards;
+  animation: LWHairTopLeft 3s linear forwards;
+  -webkit-animation-delay: 3.4s;
+  -o-animation-delay: 3.4s;
+  -moz-animation-delay: 3.4s;
+  animation-delay: 3.4s;
+}
+
+@-webkit-keyframes LWHairTopLeft {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  to {
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+}
+
+#linework-hair-right .st2 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: LWHairTopRight 3s linear forwards;
+  -o-animation: LWHairTopRight 3s linear forwards;
+  -moz-animation: LWHairTopRight 3s linear forwards;
+  animation: LWHairTopRight 3s linear forwards;
+  -webkit-animation-delay: 3.4s;
+  -o-animation-delay: 3.4s;
+  -moz-animation-delay: 3.4s;
+  animation-delay: 3.4s;
+}
+
+@-webkit-keyframes LWHairTopRight {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  to {
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+}
+
+#linework-hairlines-left .st2 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: LWHairLinesLeft 3s linear forwards;
+  -o-animation: LWHairLinesLeft 3s linear forwards;
+  -moz-animation: LWHairLinesLeft 3s linear forwards;
+  animation: LWHairLinesLeft 3s linear forwards;
+  -webkit-animation-delay: 3.6s;
+  -o-animation-delay: 3.6s;
+  -moz-animation-delay: 3.6s;
+  animation-delay: 3.6s;
+}
+
+@-webkit-keyframes LWHairLinesLeft {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  to {
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+}
+
+#linework-hairlines-right .st2 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: LWHairLinesRight 3s linear forwards;
+  -o-animation: LWHairLinesRight 3s linear forwards;
+  -moz-animation: LWHairLinesRight 3s linear forwards;
+  animation: LWHairLinesRight 3s linear forwards;
+  -webkit-animation-delay: 3.6s;
+  -o-animation-delay: 3.6s;
+  -moz-animation-delay: 3.6s;
+  animation-delay: 3.6s;
+}
+
+@-webkit-keyframes LWHairLinesRight {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  to {
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+}
+
+
+/********************************************************************************/
+                       /* INITIAL LINEWORK -- FACIAL LINES */
+/********************************************************************************/
+
+#linework-neck-outline .st4 {
+  opacity: 0;
+  stroke-dasharray: 4000;
+  stroke-dashoffset: 0;
+  -webkit-animation: LWNeck 3s linear forwards;
+  -o-animation: LWNeck 3s linear forwards;
+  -moz-animation: LWNeck 3s linear forwards;
+  animation: LWNeck 3s linear forwards;
+  -webkit-animation-delay: 3.8s;
+  -o-animation-delay: 3.8s;
+  -moz-animation-delay: 3.8s;
+  animation-delay: 3.8s;
+}
+
+@-webkit-keyframes LWNeck {
+  0% {
+    fill: rgba(0,0,0,0);
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  60% {
+    opacity: 100;
+    fill: rgba(0,0,0,0.2);
+    stroke-dashoffset: 0;
+  }
+  85% {
+    fill: rgba(0,0,0,0.6);
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    fill: rgba(0,0,0,1);
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+
+}
+
+#linework-face-outline .st2 {
+  opacity: 0;
+  stroke-dasharray: 2200;
+  stroke-dashoffset: 0;
+  -webkit-animation: LWFace 3s linear forwards;
+  -o-animation: LWFace 3s linear forwards;
+  -moz-animation: LWFace 3s linear forwards;
+  animation: LWFace 3s linear forwards;
+  -webkit-animation-delay: 3.8s;
+  -o-animation-delay: 3.8s;
+  -moz-animation-delay: 3.8s;
+  animation-delay: 3.8s;
+}
+
+@-webkit-keyframes LWFace {
+  from {
+    opacity: 0;
+    stroke-dashoffset: 2200;
+  }
+  to {
+    opacity: 100;
+    stroke-dashoffset: 0;
+  }
+}
+
+/********************************************************************************/
+                       /* COLORING PHASE - BLACK */
+/********************************************************************************/
+
+#fill-hair .st4 {
+  opacity: 0;
+  stroke: none;
+  -webkit-animation: hair-fill 3s linear forwards;
+  -o-animation: hair-fill 3s linear forwards;
+  -moz-animation: hair-fill 3s linear forwards;
+  animation: hair-fill 3s linear forwards;
+  -webkit-animation-delay: 3.8s;
+  -o-animation-delay: 3.8s;
+  -moz-animation-delay: 3.8s;
+  animation-delay: 3.8s;
+}
+
+@-webkit-keyframes hair-fill {
+  0% {
+    fill: rgba(0,0,0,0);
+    opacity: 0;
+    /*stroke-dashoffset: 2200;*/
+  }
+  60% {
+    opacity: 20;
+    fill: rgba(0,0,0,0.2);
+    stroke-dashoffset: 0;
+  }
+  85% {
+    fill: rgba(0,0,0,0.6);
+    opacity: 85;
+    /*stroke-dashoffset: 0;*/
+  }
+
+  100% {
+    fill: rgba(0,0,0,1);
+    opacity: 100;
+    /*stroke-dashoffset: 0;*/
+  }
+}
+
