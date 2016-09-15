@@ -4,12 +4,12 @@ body {
   font-size: 0;
 }
 
-.st9, .st1, .st2, .st3, .st9, .st5, .st2, .st7 {
-  /*fill: none;*/
-}
-
-.st8 {
-  display: none;
+.imageContainer {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /********************************************************************************/
@@ -25,29 +25,20 @@ body {
   animation: headOutline 5s linear forwards;
 }
 
-/*@-webkit-keyframes headOutline {
-  from {
-    stroke-dashoffset: 2000;
+  @-webkit-keyframes headOutline {
+    0% {
+      stroke-dashoffset: 2000;
+    }
+    20% {
+      stroke-dashoffset: 0;
+    }
+    80% {
+      stroke-dashoffset: 0;
+    }
+    100% {
+      stroke-dashoffset: 2000;
+    }
   }
-  to {
-    stroke-dashoffset: 0;
-  }
-}*/
-
-@-webkit-keyframes headOutline {
-  0% {
-    stroke-dashoffset: 2000;
-  }
-  20% {
-    stroke-dashoffset: 0;
-  }
-  80% {
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dashoffset: 2000;
-  }
-}
 
 #neck .st2 {
   opacity: 0;
@@ -63,41 +54,30 @@ body {
   animation-delay: 1s;
 }
 
-/*@-webkit-keyframes neck {
-  from {
-    opacity: 0;
-    stroke-dashoffset: 2200;
-  }
-  to {
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-}*/
+  @-webkit-keyframes neck {
+    0% {
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    20% {
+      opacity: 100;
+      stroke-dashoffset: 1100;
+    }
+    40% {
+      stroke-dashoffset: 100
+    }
+    60% {
+      stroke-dashoffset: 600
+    }
+    80% {
 
-@-webkit-keyframes neck {
-  0% {
-    opacity: 0;
-    stroke-dashoffset: 2200;
+      stroke-dashoffset: 1700;
+    }
+    100% {
+
+      stroke-dashoffset: 2200;
+    }
   }
-  20% {
-    opacity: 100;
-    stroke-dashoffset: 1100;
-  }
-  40% {
-    stroke-dashoffset: 100
-  }
-  60% {
-    stroke-dashoffset: 600
-  }
-  80% {
-    /*opacity: 100;*/
-    stroke-dashoffset: 1700;
-  }
-  100% {
-    /*opacity: 0;*/
-    stroke-dashoffset: 2200;
-  }
-}
 
 #shoulderL .st2 {
   opacity: 0;
@@ -113,41 +93,28 @@ body {
   animation-delay: 2s;
 }
 
-/*@-webkit-keyframes shoulderL {
-  from {
-    opacity: 0;
-    stroke-dashoffset: 2200;
+  @-webkit-keyframes shoulderL {
+    0% {
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    20% {
+      opacity: 100;
+      stroke-dashoffset: 1100;
+    }
+    40% {
+      stroke-dashoffset: 0
+    }
+    60% {
+      stroke-dashoffset: 600
+    }
+    80% {
+      stroke-dashoffset: 1700;
+    }
+    100% {
+      stroke-dashoffset: 2200;
+    }
   }
-  to {
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-}*/
-
-@-webkit-keyframes shoulderL {
-  0% {
-    opacity: 0;
-    stroke-dashoffset: 2200;
-  }
-  20% {
-    opacity: 100;
-    stroke-dashoffset: 1100;
-  }
-  40% {
-    stroke-dashoffset: 0
-  }
-  60% {
-    stroke-dashoffset: 600
-  }
-  80% {
-    /*opacity: 100;*/
-    stroke-dashoffset: 1700;
-  }
-  100% {
-    /*opacity: 0;*/
-    stroke-dashoffset: 2200;
-  }
-}
 
 #shoulderR .st2 {
   opacity: 0;
@@ -163,42 +130,28 @@ body {
   animation-delay: 2.4s;
 }
 
-/*@-webkit-keyframes shoulderR {
-  from {
-    opacity: 0;
-    stroke-dashoffset: 2200;
+  @-webkit-keyframes shoulderR {
+    0% {
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    20% {
+      opacity: 100;
+      stroke-dashoffset: 1100;
+    }
+    40% {
+      stroke-dashoffset: 100
+    }
+    60% {
+      stroke-dashoffset: 600
+    }
+    80% {
+      stroke-dashoffset: 1700;
+    }
+    100% {
+      stroke-dashoffset: 2200;
+    }
   }
-  to {
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-}
-*/
-
-@-webkit-keyframes shoulderR {
-  0% {
-    opacity: 0;
-    stroke-dashoffset: 2200;
-  }
-  20% {
-    opacity: 100;
-    stroke-dashoffset: 1100;
-  }
-  40% {
-    stroke-dashoffset: 100
-  }
-  60% {
-    stroke-dashoffset: 600
-  }
-  80% {
-    /*opacity: 100;*/
-    stroke-dashoffset: 1700;
-  }
-  100% {
-    /*opacity: 0;*/
-    stroke-dashoffset: 2200;
-  }
-}
 
 /********************************************************************************/
                                 /* FACE GRID */
@@ -218,41 +171,28 @@ body {
   animation-delay: 2.7s;
 }
 
-/*@-webkit-keyframes grid-vert {
-  from {
-    opacity: 0;
-    stroke-dashoffset: 2200;
+  @-webkit-keyframes grid-vert {
+    0% {
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    20% {
+      opacity: 100;
+      stroke-dashoffset: 1100;
+    }
+    40% {
+      stroke-dashoffset: 100
+    }
+    60% {
+      stroke-dashoffset: 600
+    }
+    80% {
+      stroke-dashoffset: 1700;
+    }
+    100% {
+      stroke-dashoffset: 2200;
+    }
   }
-  to {
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-}*/
-
-@-webkit-keyframes grid-vert {
-  0% {
-    opacity: 0;
-    stroke-dashoffset: 2200;
-  }
-  20% {
-    opacity: 100;
-    stroke-dashoffset: 1100;
-  }
-  40% {
-    stroke-dashoffset: 100
-  }
-  60% {
-    stroke-dashoffset: 600
-  }
-  80% {
-    /*opacity: 100;*/
-    stroke-dashoffset: 1700;
-  }
-  100% {
-    /*opacity: 0;*/
-    stroke-dashoffset: 2200;
-  }
-}
 
 #grid-horiz-eye-top .st2 {
   opacity: 0;
@@ -268,41 +208,28 @@ body {
   animation-delay: 2.8s;
 }
 
-/*@-webkit-keyframes grid-eye-top {
-  from {
-    opacity: 0;
-    stroke-dashoffset: 2200;
+  @-webkit-keyframes grid-eye-top {
+    0% {
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    20% {
+      opacity: 100;
+      stroke-dashoffset: 1100;
+    }
+    40% {
+      stroke-dashoffset: 100
+    }
+    60% {
+      stroke-dashoffset: 600
+    }
+    80% {
+      stroke-dashoffset: 1700;
+    }
+    100% {
+      stroke-dashoffset: 2200;
+    }
   }
-  to {
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-}*/
-
-@-webkit-keyframes grid-eye-top {
-  0% {
-    opacity: 0;
-    stroke-dashoffset: 2200;
-  }
-  20% {
-    opacity: 100;
-    stroke-dashoffset: 1100;
-  }
-  40% {
-    stroke-dashoffset: 100
-  }
-  60% {
-    stroke-dashoffset: 600
-  }
-  80% {
-    /*opacity: 100;*/
-    stroke-dashoffset: 1700;
-  }
-  100% {
-    /*opacity: 0;*/
-    stroke-dashoffset: 2200;
-  }
-}
 
 #grid-horiz-eye-bot .st2 {
   opacity: 0;
@@ -318,41 +245,28 @@ body {
   animation-delay: 3s;
 }
 
-/*@-webkit-keyframes grid-eye-bot {
-  from {
-    opacity: 0;
-    stroke-dashoffset: 2200;
+  @-webkit-keyframes grid-eye-bot {
+    0% {
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    20% {
+      opacity: 100;
+      stroke-dashoffset: 1100;
+    }
+    40% {
+      stroke-dashoffset: 100
+    }
+    60% {
+      stroke-dashoffset: 600
+    }
+    80% {
+      stroke-dashoffset: 1700;
+    }
+    100% {
+      stroke-dashoffset: 2200;
+    }
   }
-  to {
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-}*/
-
-@-webkit-keyframes grid-eye-bot {
-  0% {
-    opacity: 0;
-    stroke-dashoffset: 2200;
-  }
-  20% {
-    opacity: 100;
-    stroke-dashoffset: 1100;
-  }
-  40% {
-    stroke-dashoffset: 100
-  }
-  60% {
-    stroke-dashoffset: 600
-  }
-  80% {
-    /*opacity: 100;*/
-    stroke-dashoffset: 1700;
-  }
-  100% {
-    /*opacity: 0;*/
-    stroke-dashoffset: 2200;
-  }
-}
 
 #grid-nose-hr .st2 {
   opacity: 0;
@@ -368,42 +282,28 @@ body {
   animation-delay: 3.2s;
 }
 
-/*@-webkit-keyframes grid-nose {
-  from {
-    opacity: 0;
-    stroke-dashoffset: 2200;
+  @-webkit-keyframes grid-nose {
+    0% {
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    20% {
+      opacity: 100;
+      stroke-dashoffset: 1100;
+    }
+    40% {
+      stroke-dashoffset: 100
+    }
+    60% {
+      stroke-dashoffset: 600
+    }
+    80% {
+      stroke-dashoffset: 1700;
+    }
+    100% {
+      stroke-dashoffset: 2200;
+    }
   }
-  to {
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-}
-*/
-
-@-webkit-keyframes grid-nose {
-  0% {
-    opacity: 0;
-    stroke-dashoffset: 2200;
-  }
-  20% {
-    opacity: 100;
-    stroke-dashoffset: 1100;
-  }
-  40% {
-    stroke-dashoffset: 100
-  }
-  60% {
-    stroke-dashoffset: 600
-  }
-  80% {
-    /*opacity: 100;*/
-    stroke-dashoffset: 1700;
-  }
-  100% {
-    /*opacity: 0;*/
-    stroke-dashoffset: 2200;
-  }
-}
 
 #grid-mouth-hr .st2 {
   opacity: 0;
@@ -419,41 +319,28 @@ body {
   animation-delay: 3.4s;
 }
 
-/*@-webkit-keyframes grid-mouth {
-  from {
-    opacity: 0;
-    stroke-dashoffset: 2200;
+  @-webkit-keyframes grid-mouth {
+    0% {
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    20% {
+      opacity: 100;
+      stroke-dashoffset: 1100;
+    }
+    40% {
+      stroke-dashoffset: 100
+    }
+    60% {
+      stroke-dashoffset: 600
+    }
+    80% {
+      stroke-dashoffset: 1700;
+    }
+    100% {
+      stroke-dashoffset: 2200;
+    }
   }
-  to {
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-}*/
-
-@-webkit-keyframes grid-mouth {
-  0% {
-    opacity: 0;
-    stroke-dashoffset: 2200;
-  }
-  20% {
-    opacity: 100;
-    stroke-dashoffset: 1100;
-  }
-  40% {
-    stroke-dashoffset: 100
-  }
-  60% {
-    stroke-dashoffset: 600
-  }
-  80% {
-    /*opacity: 100;*/
-    stroke-dashoffset: 1700;
-  }
-  100% {
-    /*opacity: 0;*/
-    stroke-dashoffset: 2200;
-  }
-}
 
 /********************************************************************************/
                        /* INITIAL LINEWORK -- FACIAL FEATURES */
@@ -473,30 +360,27 @@ body {
   animation-delay: 3.4s;
 }
 
-@-webkit-keyframes LWLeftEye {
-  0% {
-    fill: rgba(0,0,0,0);
-    opacity: 0;
-    stroke-dashoffset: 2200;
-  }
-  60% {
-    opacity: 100;
-    fill: rgba(0,0,0,0.2);
-    stroke-dashoffset: 0;
-  }
-  85% {
-    fill: rgba(0,0,0,0.6);
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
+  @-webkit-keyframes LWLeftEye {
+    0% {
+      fill-opacity: 0;
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    60% {
+      fill-opacity: 0.2;
+      stroke-dashoffset: 0;
+    }
+    85% {
+      fill-opacity: 0.8;
+      stroke-dashoffset: 0;
+    }
 
-  100% {
-    fill: rgba(0,0,0,1);
-    opacity: 100;
-    stroke-dashoffset: 0;
+    100% {
+      fill-opacity: 1;
+      opacity: 100;
+      stroke-dashoffset: 0;
+    }
   }
-
-}
 
 #linework-right-eye .st9 {
   opacity: 0;
@@ -512,30 +396,27 @@ body {
   animation-delay: 3.4s;
 }
 
-@-webkit-keyframes LWRightEye {
-  0% {
-    fill: rgba(0,0,0,0);
-    opacity: 0;
-    stroke-dashoffset: 2200;
-  }
-  60% {
-    opacity: 100;
-    fill: rgba(0,0,0,0.2);
-    stroke-dashoffset: 0;
-  }
-  85% {
-    fill: rgba(0,0,0,0.6);
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
+  @-webkit-keyframes LWRightEye {
+    0% {
+      fill-opacity: 0;
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    60% {
+      fill-opacity: 0.2;
+      stroke-dashoffset: 0;
+    }
+    85% {
+      fill-opacity: 0.8;
+      stroke-dashoffset: 0;
+    }
 
-  100% {
-    fill: rgba(0,0,0,1);
-    opacity: 100;
-    stroke-dashoffset: 0;
+    100% {
+      fill-opacity: 1;
+      opacity: 100;
+      stroke-dashoffset: 0;
+    }
   }
-
-}
 
 #linework-nose .st9 {
   opacity: 0;
@@ -551,29 +432,28 @@ body {
   animation-delay: 3.4s;
 }
 
-@-webkit-keyframes LWnose {
-  0% {
-    fill: rgba(0,0,0,0);
-    opacity: 0;
-    stroke-dashoffset: 2200;
-  }
-  60% {
-    opacity: 100;
-    fill: rgba(0,0,0,0.2);
-    stroke-dashoffset: 0;
-  }
-  85% {
-    fill: rgba(0,0,0,0.6);
-    opacity: 100;
-    stroke-dashoffset: 0;
+  @-webkit-keyframes LWnose {
+    0% {
+      fill-opacity: 0;
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    60% {
+      fill-opacity: 0.2;
+      stroke-dashoffset: 0;
+    }
+    85% {
+      fill-opacity: 0.8;
+      stroke-dashoffset: 0;
+    }
+
+    100% {
+      fill-opacity: 1;
+      opacity: 100;
+      stroke-dashoffset: 0;
+    }
   }
 
-  100% {
-    fill: rgba(0,0,0,1);
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-}
 
 #linework-mouth .st9 {
   opacity: 0;
@@ -589,30 +469,27 @@ body {
   animation-delay: 3.4s;
 }
 
-@-webkit-keyframes LWmouth {
-  0% {
-    fill: rgba(0,0,0,0);
-    opacity: 0;
-    stroke-dashoffset: 2200;
-  }
-  60% {
-    opacity: 100;
-    fill: rgba(0,0,0,0.2);
-    stroke-dashoffset: 0;
-  }
-  85% {
-    fill: rgba(0,0,0,0.6);
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
+  @-webkit-keyframes LWmouth {
+    0% {
+      fill-opacity: 0;
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    60% {
+      fill-opacity: 0.2;
+      stroke-dashoffset: 0;
+    }
+    85% {
+      fill-opacity: 0.8;
+      stroke-dashoffset: 0;
+    }
 
-  100% {
-    fill: rgba(0,0,0,1);
-    opacity: 100;
-    stroke-dashoffset: 0;
+    100% {
+      fill-opacity: 1;
+      opacity: 100;
+      stroke-dashoffset: 0;
+    }
   }
-
-}
 
 #linework-pupils .st10 {
   opacity: 0;
@@ -628,31 +505,27 @@ body {
   animation-delay: 3.4s;
 }
 
-@-webkit-keyframes LWPupils {
-  0% {
-    fill: rgba(255,255,255,0);
-    opacity: 0;
-    stroke-dashoffset: 2200;
-  }
-  60% {
-    opacity: 100;
-    fill: rgba(255,255,255,0.2);
-    stroke-dashoffset: 0;
-  }
-  85% {
-    fill: rgba(255,255,255,0.6);
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
+  @-webkit-keyframes LWPupils {
+    0% {
+      fill-opacity: 0;
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    60% {
+      fill-opacity: 0.2;
+      stroke-dashoffset: 0;
+    }
+    85% {
+      fill-opacity: 0.8;
+      stroke-dashoffset: 0;
+    }
 
-  100% {
-    fill: rgba(255,255,255,1);
-    opacity: 100;
-    stroke-dashoffset: 0;
+    100% {
+      fill-opacity: 1;
+      opacity: 100;
+      stroke-dashoffset: 0;
+    }
   }
-
-}
-
 
 #linework-eyebrow-right .st9 {
   opacity: 0;
@@ -668,30 +541,28 @@ body {
   animation-delay: 3.4s;
 }
 
-@-webkit-keyframes LWRightBrow {
-  0% {
-    fill: rgba(0,0,0,0);
-    opacity: 0;
-    stroke-dashoffset: 2200;
-  }
-  60% {
-    opacity: 100;
-    fill: rgba(0,0,0,0.2);
-    stroke-dashoffset: 0;
-  }
-  85% {
-    fill: rgba(0,0,0,0.6);
-    opacity: 100;
-    stroke-dashoffset: 0;
+  @-webkit-keyframes LWRightBrow {
+    0% {
+      fill-opacity: 0;
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    60% {
+      fill-opacity: 0.2;
+      stroke-dashoffset: 0;
+    }
+    85% {
+      fill-opacity: 0.8;
+      stroke-dashoffset: 0;
+    }
+
+    100% {
+      fill-opacity: 1;
+      opacity: 100;
+      stroke-dashoffset: 0;
+    }
   }
 
-  100% {
-    fill: rgba(0,0,0,1);
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-
-}
 
 #linework-eyebrow-left .st9 {
   opacity: 0;
@@ -707,30 +578,28 @@ body {
   animation-delay: 3.4s;
 }
 
-@-webkit-keyframes LWLeftBrow {
-  0% {
-    fill: rgba(0,0,0,0);
-    opacity: 0;
-    stroke-dashoffset: 2200;
-  }
-  60% {
-    opacity: 100;
-    fill: rgba(0,0,0,0.2);
-    stroke-dashoffset: 0;
-  }
-  85% {
-    fill: rgba(0,0,0,0.6);
-    opacity: 100;
-    stroke-dashoffset: 0;
+  @-webkit-keyframes LWLeftBrow {
+    0% {
+      fill-opacity: 0;
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    60% {
+      fill-opacity: 0.2;
+      stroke-dashoffset: 0;
+    }
+    85% {
+      fill-opacity: 0.8;
+      stroke-dashoffset: 0;
+    }
+
+    100% {
+      fill-opacity: 1;
+      opacity: 100;
+      stroke-dashoffset: 0;
+    }
   }
 
-  100% {
-    fill: rgba(0,0,0,1);
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-
-}
 
 #linework-face-outline .st8 {
   opacity: 0;
@@ -746,16 +615,16 @@ body {
   animation-delay: 3.4s;
 }
 
-@-webkit-keyframes jawLine {
-  0% {
-    opacity: 0;
-    stroke-dashoffset: 2200;
+  @-webkit-keyframes jawLine {
+    0% {
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    100% {
+      opacity: 100;
+      stroke-dashoffset: 0;
+    }
   }
-  100% {
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-}
 
 /********************************************************************************/
                        /* INITIAL LINEWORK -- HAIR */
@@ -776,16 +645,16 @@ body {
   animation-delay: 3.4s;
 }
 
-@-webkit-keyframes LWHairLeftBang {
-  from {
-    opacity: 0;
-    stroke-dashoffset: 2200;
+  @-webkit-keyframes LWHairLeftBang {
+    from {
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    to {
+      opacity: 100;
+      stroke-dashoffset: 0;
+    }
   }
-  to {
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-}
 
 #linework-hair-rightbang .st8 {
   opacity: 0;
@@ -801,16 +670,16 @@ body {
   animation-delay: 3.4s;
 }
 
-@-webkit-keyframes LWHairRightBang {
-  from {
-    opacity: 0;
-    stroke-dashoffset: 2200;
+  @-webkit-keyframes LWHairRightBang {
+    from {
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    to {
+      opacity: 100;
+      stroke-dashoffset: 0;
+    }
   }
-  to {
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-}
 
 #linework-hair-left .st8 {
   opacity: 0;
@@ -826,16 +695,16 @@ body {
   animation-delay: 3.4s;
 }
 
-@-webkit-keyframes LWHairTopLeft {
-  from {
-    opacity: 0;
-    stroke-dashoffset: 2200;
+  @-webkit-keyframes LWHairTopLeft {
+    from {
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    to {
+      opacity: 100;
+      stroke-dashoffset: 0;
+    }
   }
-  to {
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-}
 
 #linework-hair-right .st8 {
   opacity: 0;
@@ -851,16 +720,16 @@ body {
   animation-delay: 3.4s;
 }
 
-@-webkit-keyframes LWHairTopRight {
-  from {
-    opacity: 0;
-    stroke-dashoffset: 2200;
+  @-webkit-keyframes LWHairTopRight {
+    from {
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    to {
+      opacity: 100;
+      stroke-dashoffset: 0;
+    }
   }
-  to {
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-}
 
 #linework-hairlines-left .st8 {
   opacity: 0;
@@ -876,16 +745,16 @@ body {
   animation-delay: 3.6s;
 }
 
-@-webkit-keyframes LWHairLinesLeft {
-  from {
-    opacity: 0;
-    stroke-dashoffset: 2200;
+  @-webkit-keyframes LWHairLinesLeft {
+    from {
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    to {
+      opacity: 100;
+      stroke-dashoffset: 0;
+    }
   }
-  to {
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-}
 
 #linework-hairlines-right .st8 {
   opacity: 0;
@@ -901,16 +770,16 @@ body {
   animation-delay: 3.6s;
 }
 
-@-webkit-keyframes LWHairLinesRight {
-  from {
-    opacity: 0;
-    stroke-dashoffset: 2200;
+  @-webkit-keyframes LWHairLinesRight {
+    from {
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    to {
+      opacity: 100;
+      stroke-dashoffset: 0;
+    }
   }
-  to {
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-}
 
 
 /********************************************************************************/
@@ -931,30 +800,29 @@ body {
   animation-delay: 3.8s;
 }
 
-@-webkit-keyframes LWNeck {
-  0% {
-    fill: rgba(0,0,0,0);
-    opacity: 0;
-    stroke-dashoffset: 2200;
-  }
-  60% {
-    opacity: 100;
-    fill: rgba(0,0,0,0.2);
-    stroke-dashoffset: 0;
-  }
-  85% {
-    fill: rgba(0,0,0,0.6);
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
+  @-webkit-keyframes LWNeck {
+    0% {
+      fill: rgba(0,0,0,0);
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    60% {
+      opacity: 100;
+      fill: rgba(0,0,0,0.2);
+      stroke-dashoffset: 0;
+    }
+    85% {
+      fill: rgba(0,0,0,0.6);
+      opacity: 100;
+      stroke-dashoffset: 0;
+    }
 
-  100% {
-    fill: rgba(0,0,0,1);
-    opacity: 100;
-    stroke-dashoffset: 0;
+    100% {
+      fill: rgba(0,0,0,1);
+      opacity: 100;
+      stroke-dashoffset: 0;
+    }
   }
-
-}
 
 #linework-face-outline .st2 {
   opacity: 0;
@@ -970,16 +838,16 @@ body {
   animation-delay: 3.8s;
 }
 
-@-webkit-keyframes LWFace {
-  from {
-    opacity: 0;
-    stroke-dashoffset: 2200;
+  @-webkit-keyframes LWFace {
+    from {
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    to {
+      opacity: 100;
+      stroke-dashoffset: 0;
+    }
   }
-  to {
-    opacity: 100;
-    stroke-dashoffset: 0;
-  }
-}
 
 /********************************************************************************/
                        /* COLORING PHASE - BLACK */
@@ -992,36 +860,38 @@ body {
   -o-animation: hair-fill 3s linear forwards;
   -moz-animation: hair-fill 3s linear forwards;
   animation: hair-fill 3s linear forwards;
-  -webkit-animation-delay: 3.8s;
-  -o-animation-delay: 3.8s;
-  -moz-animation-delay: 3.8s;
-  animation-delay: 3.8s;
+  -webkit-animation-delay: 4.2s;
+  -o-animation-delay: 4.2s;
+  -moz-animation-delay: 4.2s;
+  animation-delay: 4.2s;
 }
 
-@-webkit-keyframes hair-fill {
-  0% {
-    fill: rgba(0,0,0,0);
-    opacity: 0;
-    stroke-dashoffset: 2200;
+  @-webkit-keyframes hair-fill {
+    0% {
+      fill-opacity: 0;
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+    40% {
+      fill-opacity: 0.3;
+      stroke-dashoffset: 2200;
+    }
+    60% {
+      fill-opacity: 0.6;
+      stroke-dashoffset: 2200;
+    }
+    85% {
+      fill-opacity: 0.9;
+      stroke-dashoffset: 2200;
+      stroke: rgba(0,0,0,0.2);
+    }
+    100% {
+      fill-opacity: 1;
+      opacity: 100;
+      stroke-dashoffset: 0;
+      stroke: black;
+    }
   }
-  60% {
-    opacity: 20;
-    fill: rgba(0,0,0,0.2);
-    stroke-dashoffset: 0;
-  }
-  85% {
-    fill: rgba(0,0,0,0.6);
-    opacity: 85;
-    stroke-dashoffset: 0;
-  }
-
-  100% {
-    fill: rgba(0,0,0,1);
-    opacity: 100;
-    stroke-dashoffset: 0;
-    stroke: black;
-  }
-}
 
 
 /********************************************************************************/
@@ -1196,24 +1066,24 @@ body {
 
   @-webkit-keyframes greys3Fill {
   0% {
-    fill: rgba(0,0,0,0);
     opacity: 0;
+    fill-opacity: 0;
     stroke-dashoffset: 2200;
   }
   60% {
     opacity: 20;
-    fill: rgba(0,0,0,0);
+    fill-opacity: 0.6;
     stroke-dashoffset: 0;
   }
   85% {
-    fill: rgba(0,0,0,0);
-    opacity: 85;
+    opacity: 50;
+    fill-opacity: 0.8;
     stroke-dashoffset: 0;
   }
 
   100% {
-    fill: rgba(0,0,0,0);
     opacity: 100;
+    fill-opacity: 1;
     stroke-dashoffset: 0;
   }
 }
