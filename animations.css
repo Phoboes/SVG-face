@@ -4,10 +4,13 @@ body {
   font-size: 0;
 }
 
-.st10, .st1, .st2, .st3, .st10, .st5, .st2, .st7 {
+.st9, .st1, .st2, .st3, .st9, .st5, .st2, .st7 {
   /*fill: none;*/
 }
 
+.st8 {
+  display: none;
+}
 
 /********************************************************************************/
                       /* FACE, NECK & SHOULDER OUTLINES */
@@ -456,7 +459,7 @@ body {
                        /* INITIAL LINEWORK -- FACIAL FEATURES */
 /********************************************************************************/
 
-#linework-left-eye .st10 {
+#linework-left-eye .st9 {
   opacity: 0;
   stroke-dasharray: 2200;
   stroke-dashoffset: 0;
@@ -495,7 +498,7 @@ body {
 
 }
 
-#linework-right-eye .st10 {
+#linework-right-eye .st9 {
   opacity: 0;
   stroke-dasharray: 2200;
   stroke-dashoffset: 0;
@@ -534,7 +537,7 @@ body {
 
 }
 
-#linework-nose .st10 {
+#linework-nose .st9 {
   opacity: 0;
   stroke-dasharray: 2200;
   stroke-dashoffset: 0;
@@ -572,7 +575,7 @@ body {
   }
 }
 
-#linework-mouth .st10 {
+#linework-mouth .st9 {
   opacity: 0;
   stroke-dasharray: 2200;
   stroke-dashoffset: 0;
@@ -611,7 +614,7 @@ body {
 
 }
 
-#linework-pupils .st11 {
+#linework-pupils .st10 {
   opacity: 0;
   stroke-dasharray: 2200;
   stroke-dashoffset: 0;
@@ -651,7 +654,7 @@ body {
 }
 
 
-#linework-eyebrow-right .st10 {
+#linework-eyebrow-right .st9 {
   opacity: 0;
   stroke-dasharray: 2200;
   stroke-dashoffset: 0;
@@ -690,7 +693,7 @@ body {
 
 }
 
-#linework-eyebrow-left .st10 {
+#linework-eyebrow-left .st9 {
   opacity: 0;
   stroke-dasharray: 2200;
   stroke-dashoffset: 0;
@@ -914,7 +917,7 @@ body {
                        /* INITIAL LINEWORK -- FACIAL LINES */
 /********************************************************************************/
 
-#linework-neck-outline .st10 {
+#linework-neck-outline .st9 {
   opacity: 0;
   stroke-dasharray: 4000;
   stroke-dashoffset: 0;
@@ -982,7 +985,7 @@ body {
                        /* COLORING PHASE - BLACK */
 /********************************************************************************/
 
-#fill-hair .st10 {
+#fill-hair .st9 {
   opacity: 0;
   stroke: none;
   -webkit-animation: hair-fill 3s linear forwards;
@@ -1177,7 +1180,7 @@ body {
     }
   }
 
-/*#greys3 {
+#greys3  {
   opacity: 0;
   stroke-dasharray: 2200;
   stroke-dashoffset: 0;
@@ -1213,4 +1216,41 @@ body {
     opacity: 100;
     stroke-dashoffset: 0;
   }
-}*/
+}
+
+  #pupilShades .st6, #pupilShades .st4, #pupilShades .st11, #pupilShades .st12, #pupilShades .st13, #pupilShades .st14, #pupilShades .st15 {
+    opacity: 0;
+    stroke-dasharray: 2200;
+    stroke-dashoffset: 0;
+    -webkit-animation: pupilFill 6s linear forwards;
+    -o-animation: pupilFill 6s linear forwards;
+    -moz-animation: pupilFill 6s linear forwards;
+    animation: pupilFill 6s linear forwards;
+    -webkit-animation-delay: 4.5s;
+    -o-animation-delay: 4.5s;
+    -moz-animation-delay: 4.5s;
+    animation-delay: 4.5s;
+    }
+
+    @-webkit-keyframes pupilFill {
+      0% {
+        fill-opacity: 1;
+        opacity: 100;
+        stroke-dashoffset: 2200;
+      }
+      60% {
+        opacity: 100;
+        fill-opacity: 0.5;
+        stroke-dashoffset: 0;
+      }
+      85% {
+        fill-opacity: 0.8;
+        opacity: 85;
+        stroke-dashoffset: 0;
+      }
+
+      100% {
+        fill-opacity: 1;
+        opacity: 100;
+        stroke-dashoffset: 0;
+      }
