@@ -12,6 +12,13 @@ body {
   transform: translate(-50%, -50%);
 }
 
+/** .preload {
+  -webkit-animation: none !important;
+  -o-animation: none !important;
+  -moz-animation: none !important;
+  animation: none !important;
+}*/
+
 /********************************************************************************/
                       /* FACE, NECK & SHOULDER OUTLINES */
 /********************************************************************************/
@@ -802,23 +809,23 @@ body {
 
   @-webkit-keyframes LWNeck {
     0% {
-      fill: rgba(0,0,0,0);
+      fill-opacity: 0;
       opacity: 0;
       stroke-dashoffset: 2200;
     }
     60% {
       opacity: 100;
-      fill: rgba(0,0,0,0.2);
+      fill-opacity: 0.2;
       stroke-dashoffset: 0;
     }
     85% {
-      fill: rgba(0,0,0,0.6);
+      fill-opacity: 0.6;
       opacity: 100;
       stroke-dashoffset: 0;
     }
 
     100% {
-      fill: rgba(0,0,0,1);
+      fill-opacity: 1;
       opacity: 100;
       stroke-dashoffset: 0;
     }
@@ -895,7 +902,7 @@ body {
 
 
 /********************************************************************************/
-                       /* COLORING PHASE - 50 SHADES OF GREY -- (Maybe more like 5, whatever.) */
+   /* COLORING PHASE - 50 SHADES OF GREY -- (Maybe more like 5, whatever.) */
 /********************************************************************************/
 
 #greyBase .st3 {
@@ -1124,3 +1131,38 @@ body {
         opacity: 100;
         stroke-dashoffset: 0;
       }
+}
+
+/********************************************************************************/
+                         /* DROP FILL & UNDRAW */
+/********************************************************************************/
+
+.fadeOut {
+  -webkit-animation: undraw 6s linear forwards;
+  -o-animation: undraw 6s linear forwards;
+  -moz-animation: undraw 6s linear forwards;
+  animation: undraw 6s linear forwards;
+}
+
+  @-webkit-keyframes undraw {
+    0% {
+      fill-opacity: 1;
+      opacity: 100;
+      stroke-dashoffset: 0;
+    }
+    60% {
+      fill-opacity: 0.8;
+      stroke-dashoffset: 0;
+    }
+    85% {
+      fill-opacity: 0.4;
+      stroke-dashoffset: 1100;
+    }
+
+    100% {
+      fill: none;
+      fill-opacity: 0;
+      opacity: 0;
+      stroke-dashoffset: 2200;
+    }
+  }
